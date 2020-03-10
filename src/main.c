@@ -515,7 +515,7 @@ static void work_init(void)
 static void adxl362_trigger_handler(struct device *dev,
 				    struct sensor_trigger *trig)
 {
-	static struct sensor_value accel[3];
+	struct sensor_value accel[3];
 
 	switch (trig->type) {
 	case SENSOR_TRIG_THRESHOLD:
